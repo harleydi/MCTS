@@ -11,9 +11,6 @@ class Header extends Component {
                 <NavLink to='/' className='link-style' >Home</NavLink>
                 <NavLink to='/resources' className='link-style'>Resources</NavLink>
                 <NavLink to='/about' className='link-style'>About</NavLink>
-                
-                
-                
             </div>
         )
     }

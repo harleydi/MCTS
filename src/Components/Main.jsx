@@ -4,16 +4,19 @@ import Home from './Home'
 import Header from './Header'
 import Resources from './Resources'
 import About from './About'
+import ResourceDescription from './ResourceDescription'
 
 
 
 class Main extends Component {
+    constructor(props) {
+        super(props)
+        console.log(props)
+    }
     render() {
         return (
-            <div>
-                <p>hello</p>
-
-                <Route exact path='/Home' render={Home} />
+            <div className='main-page'>
+                <Route exact path='/' component={Home} />
                 <Route exact path='/resources' render={() =>
                     <Resources
                         handleChange={this.props.handleChange}
@@ -24,7 +27,7 @@ class Main extends Component {
                     />}
                 />
                 <Route exact path='/about' render={About} />
-
+                <Route exact path='/resourceDescription/:program_id'><ResourceDescription {...this.props} onResourceLoad={this.props.onResourceLoad} descResults={this.props.descResults} /></Route>
             </div>
         )
     }
@@ -33,3 +36,5 @@ class Main extends Component {
 
 
 export default Main
+
+//difference between render={what you pass in here} and component={what you pass in here}

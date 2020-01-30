@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { getResources, getDataOnLoad } from './Services/api-helper'
+import { getResources, getDataOnLoad, getProgramId } from './Services/api-helper'
 import Header from './Components/Header';
 import Resources from './Components/Resources';
 import axios from 'axios'
@@ -15,7 +15,8 @@ class App extends Component {
     this.state = {
       Resources: [],
       userInput: '',
-      results: []
+      results: [],
+      descResults: null
     }
   }
 
@@ -39,6 +40,16 @@ class App extends Component {
 
   }
 
+  onResourceLoad = async (id) => {
+    let searchResults = await getProgramId(id)
+    this.setState({
+      descResults: searchResults
+    })
+    // console.log('im rendering');
+    console.log(searchResults)
+
+  }
+
 
 
   async componentDidMount() {
@@ -57,9 +68,9 @@ class App extends Component {
     console.log(this.state.Resources);
 
     return (
-      <div>
+      <div className='App'>
         <Header />
-        <Main handleChange={this.handleChange} userInput={this.userInput} handleClick={this.handleClick} results={this.state.results} resources={this.state.response} />
+        <Main onResourceLoad={this.onResourceLoad} descResults={this.state.descResults} {...this.props} handleChange={this.handleChange} userInput={this.userInput} handleClick={this.handleClick} results={this.state.results} resources={this.state.response} />
 
       </div>
     )
