@@ -7,6 +7,7 @@ import axios from 'axios'
 import Home from './Components/Home';
 import { BrowserRouter, Route, NavLink } from 'react-router-dom'
 import Main from './Components/Main';
+import Footer from './Components/Footer';
 
 
 class App extends Component {
@@ -71,7 +72,7 @@ class App extends Component {
       <div className='App'>
         <Header />
         <Main onResourceLoad={this.onResourceLoad} descResults={this.state.descResults} {...this.props} handleChange={this.handleChange} userInput={this.userInput} handleClick={this.handleClick} results={this.state.results} resources={this.state.response} />
-
+        <Footer />
       </div>
     )
   }

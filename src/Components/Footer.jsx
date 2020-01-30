@@ -4,8 +4,9 @@ import React, { Component } from 'react'
 class Footer extends Component {
     render() {
         return(
-            <p>Made By Mason Inc.</p>
-            
+            <div className='footer'>
+                <p>Made By Mason Inc. <i class="far fa-copyright"></i></p>
+            </div>
         )
     }
 }
