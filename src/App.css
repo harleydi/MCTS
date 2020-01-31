@@ -288,10 +288,27 @@ body {
 
 /* Media queries */
 
-@media screen and (max-width: 960px){
+@media screen and (max-width: 760px){
     .App {
       min-height: 80vh;
       min-width: 40vw;
       display: flex;
+      text-align: center;
+    }
+
+    .header-page {
+      display: flex;
+      text-align: center;
+      float: none;
+      justify-content: center;
+      justify-content: space-evenly;
+      /* position: fixed; */
+      z-index: 1;
+    }
+
+    .link-style {
+      display: flex;
+      align-content: center;
+      float: none;
     }
   }
