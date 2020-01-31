@@ -1,5 +1,5 @@
 # Project Overview
-<img src="https://images.pexels.com/photos/1867001/pexels-photo-1867001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+<img height="500" src="https://images.pexels.com/photos/1867001/pexels-photo-1867001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
 
 ## Mason Children and Teen Safespace
 
