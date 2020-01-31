@@ -40,10 +40,10 @@ Based on the initial logic defined in the previous section, try to breakdown the
 
 | Component | Description |Type |
 | --- | --- | --- |
-| Header | The Header receives props that render multiple nav titles and links | Functional |
-| NavBar | The links to the pages that will be rendered in the main | Functional |
+| Header | The Header receives props that render multiple nav titles and links | Class |
+| NavBar | The links to the pages that will be rendered in the main | Class |
 | Main | This component houses multiple rendered views through React Router and controls data received from the initial API call in state | Class |
-| Footer | Copyrights and contacts | Functional |
+| Footer | Copyrights and contacts | Class |
 
 ## Priority Matrix
 
@@ -53,21 +53,21 @@ Based on the initial logic defined in the previous section, try to breakdown the
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Setup/Add Components/| M | 2hrs| 0 | 0 |
-| Working with API | H | 5hrs| 0 | 0 |
-| Website Structure | H | 6hrs| 0 | 0 |
-| Styling | M | 6hrs| 0 | 0 |
-| Total | H | 6hrs| 0 | 0 |
+| Setup/Add Components/| M | 2hrs| 4hrs | 4hrs |
+| Working with API | H | 5hrs| 6hrs | 6hrs |
+| Website Structure | H | 6hrs| 12.5hrs | 12.5hrs |
+| Styling | M | 6hrs| 10hrs | 10hrs |
+| Total | H | 19hrs| 32.5hrs | 32.5hrs |
 
 ## Project Schedule
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Incomplete
-|Jan 24th| Website Structure / Api Planning | Incomplete
-|Jan 27th| Pseudocode / actual code | Incomplete
-|Jan 28th| Initial Clickable Model  | Incomplete
-|Jan 29th| MVP | Incomplete
+|Jan 24th| Project Pitch / Wireframes / Priority Matrix / Functional Components | Complete
+|Jan 24th| Website Structure / Api Planning | Complete
+|Jan 27th| Pseudocode / actual code | Complete
+|Jan 28th| Initial Clickable Model  | Complete
+|Jan 29th| MVP | Complete
 |Jan 30th| Styling / PostMVP | Incomplete
 |Jan 31tst| Present | Incomplete
 
@@ -77,7 +77,8 @@ Use this section to list all supporting libraries and thier role in the project.
 
 ## Issues and Resolutions
 
-Use this section to list of all major issues you anticipate encountering during development and how you plan to tackle them. Be sure to update this section during development, documenting the actual resolutions you inacted, as well as any other unexpected obstacles you encountered along the way.
+- I had trouble getting the font awesome icons to show up. [Solution]: I signed into my account and got the correct script tag. I think they updated somethings.
+- I had a issue with making my routes. This was really hard for me and trying to figure them out. [Solution]: I asked classmates for some guidance.
 
 ## Code Snippet
 
@@ -90,4 +91,4 @@ function reverse(string) {
 ```
 
 ## Change Log
- Use this section to document what changes were made in your overall planning and the reasoning behind those changes.  
+ - Changed the postMVP. Didnt get to reach them all.
