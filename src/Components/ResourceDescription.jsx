@@ -22,7 +22,6 @@ function ResourceDescription(props) {
     
     console.log(props);
     console.log(findCenter(useParams().program_id));
-    // let center = findCenter(id) && findCenter(id)[0];
     let center = props.descResults && props.descResults[0]
     console.log(center)
         return(

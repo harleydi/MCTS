@@ -4,8 +4,6 @@ import { Link, NavLink } from 'react-router-dom'
 
 
 class Resources extends Component {
-
-    // let thing = {result.agency_name}
     
     
     render() {
@@ -21,7 +19,6 @@ class Resources extends Component {
                 {this.props.results.map(result => (
                     <div className='resource-link' key={result.program_lst_id}>
                         <NavLink className="resource-link2" to={`/resourceDescription/${result.program_lst_id}`}>{result.agency_name}</NavLink>
-                        {/* <Link to='/' data={thing} /> */}
                     </div> 
                 ))}
                 </div>
